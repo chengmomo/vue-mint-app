@@ -1,6 +1,9 @@
 <template>
   <div @click="clickCell">
-    <mt-cell :title="title" :label="label" :value="value" :is-link="isLink"></mt-cell>
+    <mt-cell :title="title" :label="label" :value="value" :is-link="isLink">
+      <img slot="icon" width="35" height="35" class="cell-img"
+           :src="require('../assets/img/ic_emoji.png')">
+    </mt-cell>
   </div>
   <!-- href="/message"-->
 </template>
@@ -28,8 +31,7 @@ export default {
     },
   },
   data() {
-    return {
-    };
+    return {};
   },
   mounted() {
   },
@@ -42,5 +44,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .cell-img {
+    margin-right: 10px;
+  }
 </style>

@@ -30,17 +30,19 @@
 import Message from './Message';
 import Mine from './Mine';
 import Find from './Find';
+import Demo from './Demo';
 
 export default {
   name: 'Home',
-  components: { Find, Mine, Message },
+  components: { Demo, Find, Mine, Message },
   data() {
     return {
       selected: 1,
       tabs: [
-        { id: 1, name: '消息', comp: Message },
-        { id: 2, name: '发现', comp: Find },
-        { id: 3, name: '我的', comp: Mine }],
+        { id: 1, name: '学习', comp: Demo },
+        { id: 2, name: '消息', comp: Message },
+        { id: 3, name: '发现', comp: Find },
+        { id: 4, name: '我的', comp: Mine }],
       // 默认 tab 的选中情况
       currentIndex: [
         { isSelect: true },
