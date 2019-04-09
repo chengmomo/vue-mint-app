@@ -46,7 +46,19 @@ module.exports = {
     }],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    "no-plusplus": 0,//禁止使用++，--
-    "no-console": 0,
+    // 关闭禁止使用++，--
+    'no-plusplus': 0,
+    // 关闭不允许控制台打印
+    'no-console': 0,
+    // 关闭语句强制分号结尾
+    'semi': [0],
+    // 强制在 function的左括号之前使用一致的空格
+    'space-before-function-paren': 0,
+    // 函数表达式必须有名字
+    'func-names': 0,
+    // 注释前需要空行，注释后不需要空行
+    // "lines-around-comment": 0,
+    // 注释前需要一个空格
+    // "spaced-comment": 0,
   }
-}
+};
