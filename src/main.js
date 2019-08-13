@@ -5,7 +5,7 @@ import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import App from './App';
 import router from './router';
-import './assets/css/index.css';
+import './assets/css/index.scss';
 
 Vue.use(MintUI);
 Vue.config.productionTip = false;
