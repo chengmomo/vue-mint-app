@@ -5,15 +5,17 @@ import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import App from './App';
 import router from './router';
+import './../static/iconfont/iconfont.css';
 import './assets/css/index.scss';
 
-Vue.use(MintUI);
+
 Vue.config.productionTip = false;
+Vue.use(MintUI);
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>',
+  template: '<App/>'
 });
