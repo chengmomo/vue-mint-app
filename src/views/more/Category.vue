@@ -42,7 +42,7 @@ export default {
         { name: '特别关注', list: [1, 2] },
         { name: '热门话题', list: [1, 2] }],
       activeIndex: 0,
-      activeContent: null,
+      activeContent: null
     };
   },
   mounted() {
@@ -55,8 +55,8 @@ export default {
     clickItem(i) {
       this.activeIndex = i;
       this.activeContent = this.navList[i].name;
-    },
-  },
+    }
+  }
 };
 </script>
 

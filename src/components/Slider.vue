@@ -22,29 +22,29 @@ export default {
   name: 'slider',
   props: {
     info: {
-      type: Array,
+      type: Array
     },
     // 是否循环播放
     loop: {
       type: Boolean,
-      default: true,
+      default: true
     },
     // 是否自动播放
     autoPlay: {
       type: Boolean,
-      default: true,
+      default: true
     },
     // 播放间隔
     interval: {
       type: Number,
-      default: 3000,
-    },
+      default: 3000
+    }
   },
   data() {
     return {
       list: this.info,
       dots: true,
-      currentPageIndex: 0,
+      currentPageIndex: 0
     };
   },
   mounted() {
@@ -90,12 +90,12 @@ export default {
         snap: {
           loop: this.loop, // 开启循环播放
           threshold: 0.3, // 滚动距离超过宽度/高度的 30% 时切换图片
-          speed: 400, // 切换动画时长 400ms
+          speed: 400 // 切换动画时长 400ms
           // stepX: 200, // 每页宽度为 200px
           // stepY: 200, // 每页高度为 200px
         },
         bounce: false,
-        click: true,
+        click: true
       };
       this.slider = new BScroll(this.$refs.slider, options);
       // 获取当前页
@@ -121,8 +121,8 @@ export default {
         }
         this.slider.goToPage(pageIndex);
       }, this.interval);
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -54,8 +54,10 @@ module.exports = {
     'semi': [0],
     // 强制在 function的左括号之前使用一致的空格
     'space-before-function-paren': 0,
-    // 函数表达式必须有名字
-    'func-names': 0,
+    'func-names': 0,// 函数表达式必须有名字
+    'comma-dangle': [2, 'never'],//对象字面量项尾不能有逗号
+    'indent': ['off', 2],//缩进风格
+    'global-require': 0,
     // 注释前需要空行，注释后不需要空行
     // "lines-around-comment": 0,
     // 注释前需要一个空格

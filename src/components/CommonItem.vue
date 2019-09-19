@@ -19,24 +19,24 @@ export default {
 
   props: {
     leftImg: {
-      default: '',
+      default: ''
     },
     leftLabel: {
-      default: '',
+      default: ''
     },
     rightImg: {
-      default: '',
+      default: ''
     },
     rightLabel: {
-      default: '',
+      default: ''
     },
     isShowDivider: {
-      default: false,
+      default: false
     },
     clickItem: {
-      type: Function,
-    },
-  },
+      type: Function
+    }
+  }
 };
 </script>
 
